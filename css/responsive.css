@@ -1,0 +1,100 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #100e34;
+    --main-color: #c8c6d7;
+    --other-color: #4f48ec;
+    --button-color: #ffbf18;
+    --normal-colo: #edeee9;
+    --big-font: 3.3rem;
+    --h2-font: 2rem;
+    --h3-font: 2rem;
+    --p-font: 1rem;
+    --normal-font: 1rem;
+}
+
+@media (max-width: 1700px) {
+    header {
+        padding: 12px 3%;
+    }
+
+    header.sticky {
+        padding: 10px 3%;
+    }
+    .logo h1{
+        padding: 10px 3%;
+    }
+    section {
+        padding: 80px 3% 70px;
+    }
+
+    .home {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #menu-icon{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        color: var(--bg-color);
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 125vh;
+        background: var(--main-color);
+        /* background: url(../images/welcome-banner/back.jpg); */
+        /* background-repeat: no-repeat; */
+        color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 130px 30px;
+        transition: right 0.45s ease;
+        z-index: 999;
+    }
+    .navbar a{
+        display: block;
+        margin-top: -20px;
+        padding: 30px 0;
+    }
+    .navbar a:hover{
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: var(--button-color);
+    }
+    .navbar.open{
+        right: 0;
+    }
+    .products-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .featured-product{
+        width: 100%;
+        height: auto;
+    }
+    .product-grid{
+        height: auto;
+        
+    }
+    .product-card{
+        width: 100%;
+        height: auto;
+    }
+    .home-img img{
+        padding: 100px 0 ;
+        width: 100%;
+
+    }
+}
+
+
+
